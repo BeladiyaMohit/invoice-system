@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderComponent from "./Header";
 import { Layout } from "antd";
 import Sidebar from "./SideBar";
 const { Header, Sider, Content } = Layout;
 
 const PrivateLayout = ({ children }) => {
+  const [collapsed, setCollapsed] = useState(false);
   return (
     <div>
       <Layout>
         <Header>
-          <HeaderComponent />
+          <HeaderComponent collapsed={collapsed} setCollapsed={setCollapsed} />
         </Header>
         <Layout>
           <Sider>
-            <Sidebar />
+            <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
           </Sider>
           <Content>
             {children}

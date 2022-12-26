@@ -1,4 +1,16 @@
 .sidebarContainer {
   color: white;
   height: 100vh;
+  :global(.css-dev-only-do-not-override-acm2ia.ant-layout
+      .ant-layout-sider-has-trigger) {
+    min-width: 240px !important;
+  }
+}
+.sidebarCollapse {
+  color: white;
+  height: 100vh;
+  :global(.css-dev-only-do-not-override-acm2ia.ant-layout
+      .ant-layout-sider-has-trigger) {
+    min-width: 80px !important;
+  }
 }
