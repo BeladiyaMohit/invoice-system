@@ -1,12 +1,17 @@
 import React from "react";
+import { Layout } from "antd";
+import classes from "./styles.module.scss";
 
-const AuthLayout = ({ children }) => {
+const { Footer, Content } = Layout;
+
+const AuthLayout = (props) => {
   return (
-    <div>
-      <p>Auth Layout</p>
-      {children}
-    </div>
+    <Layout className={classes.layout}>
+      <Content className={classes.content}>{props.children}</Content>
+      {/* <Footer>Footer</Footer> */}
+    </Layout>
   );
 };
 
 export default AuthLayout;
+

@@ -3,6 +3,7 @@ import { Navigate, Route, Routes } from "react-router";
 import RoutesList from "./router";
 import AuthLayout from "./layout/AuthLayout";
 import PrivateLayout from "./layout/PrivateLayout";
+import "./styles/index.scss";
 import PublicLayout from "./layout/PublicLayout";
 // eslint-disable-next-line no-restricted-imports
 

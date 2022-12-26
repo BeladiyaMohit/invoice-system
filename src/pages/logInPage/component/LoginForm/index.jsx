@@ -1,11 +1,12 @@
 import React from "react";
 import CustomButton from "../../../../components/atoms/CustomButton";
-import AuthLayout from "../../../../components/atoms/Layout/AuthLayout";
+
 import { Form } from "antd";
 import classes from "./styles.module.scss";
 import CustomInput, {
   CustomInputPassword,
 } from "../../../../components/atoms/CustomInput";
+import AuthLayout from "../../../../layout/AuthLayout";
 
 const LoginForm = () => {
   const onFinish = (values) => {
