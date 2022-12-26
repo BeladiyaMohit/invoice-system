@@ -1,0 +1,16 @@
+
+@import '../../../styles/colors.scss';
+
+.button{
+  margin-bottom: 1.5rem !important;
+.btn{
+  border: 0;
+  // padding: 11px 20px;
+  background-color: $primary-color;
+  color: $white;
+  cursor: pointer;
+}
+ .btn:hover{
+  background-color: $secondary-color;
+ }
+}

@@ -1,0 +1,58 @@
+@import '../../../../styles/colors.scss';
+
+.container{
+  flex: 1 auto;
+  min-width: 0;
+  height: 100%;
+  
+  .form{
+   
+    height: 100%;
+  }
+
+  .forget{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px !important;
+    text-align: center;
+  }
+
+  .forgetPassword{
+    font-weight: 500 !important;
+  }
+
+
+  .forgetPassword, .signUp{
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: bold;
+   }
+
+   .forgetPassword:hover, .signUp:hover{
+    color: $secondary-color;
+   }
+
+   .member{
+    font-size: 1.075rem !important;;
+    color: $gray;
+    font-weight: 500;
+    margin: 0px;
+    text-align: center;
+   }
+
+ :global(.ant-form-item-row){
+  justify-content: center;
+ }
+
+ :global(.ant-col){
+  margin-left: 0px;
+ }
+
+ :global(.ant-form-item-control-wrapper) {
+  width: 100%;
+}
+ 
+:global(.ant-form) {
+  width: 100%;
+}
+}

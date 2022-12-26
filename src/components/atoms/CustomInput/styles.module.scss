@@ -1,0 +1,16 @@
+.input{
+ padding: 10px 13px;
+ color: #5e6278;
+ border: 1px solid #e1e3ea;
+ box-shadow: none;
+ background: transparent;
+
+ :global(#basic_password){
+  background-color: transparent;
+ }
+
+ input[name$='password']{
+  background-color: transparent;
+ }
+ 
+}
