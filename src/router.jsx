@@ -2,6 +2,7 @@ import WelComePage from "./pages/welcomePage";
 import LogInPage from "./pages/logInPage";
 import DashboardPage from "./pages/dashboardPage";
 import ErrorPage from "./pages/errorPage";
+import ExpensePage from "./pages/expensePage";
 
 const routes = [
   {
@@ -22,6 +23,13 @@ const routes = [
     path: "/dashboard",
     name: "DashboardPage",
     component: DashboardPage,
+    isPrivate: true,
+    layout: "private",
+  },
+  {
+    path: "/expense",
+    name: "ExpensePage",
+    component: ExpensePage,
     isPrivate: true,
     layout: "private",
   },
