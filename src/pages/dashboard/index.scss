@@ -1,0 +1,119 @@
+@import "./../../styles/base.scss";
+
+.dashboard {
+  background-color: #fafafb;
+  &-cardWrapper {
+    overflow: hidden;
+    margin-bottom: 40px;
+    height: 600px;
+  }
+  .ant-table-sticky-holder{
+    top: 55px !important;
+  }
+  .ant-table-thead {
+    .ant-table-cell {
+      font-size: 17px;
+      height: 70px;
+      align-self: baseline;
+      vertical-align: baseline;
+      z-index: 0;
+      font-weight: 700;
+      background-color: white;
+      border-bottom: 1px solid #e6ebf1;
+    }
+  }
+}
+.ant-card-head {
+  position: fixed;
+  width: 65%;
+  z-index: 10;
+  background-color: white !important;
+
+  border: none !important;
+}
+.ant-card-head-title {
+  font-size: 19px;
+  font-weight: 700;
+}
+.common-expenditure {
+  &-main {
+    // margin:15px;
+  }
+  &-title {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  &-body {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  &-content {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  &-statementNegative {
+    font-size: 17px;
+    margin-left: 10px;
+    color: #ff6b72;
+  }
+  &-statementPositive {
+    font-size: 17px;
+    margin-left: 10px;
+    color: #04d182;
+  }
+  &-footer {
+  }
+}
+.rowClass {
+  background-color: white;
+  border-bottom: 1px solid #e6ebf1 !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+.expenditureTag {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: #e6fff1;
+  color: #00ab6f;
+  border: none;
+  font-size: 16px;
+  padding: 7px;
+}
+.incomeTag {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: #fff1f0;
+  color: #d9505c;
+  border: none;
+  font-size: 16px;
+  padding: 7px;
+}
+.h-500 {
+  height: 600px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
