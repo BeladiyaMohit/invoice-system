@@ -4,7 +4,9 @@ import RoutesList from "./router";
 import AuthLayout from "./layout/AuthLayout";
 import PrivateLayout from "./layout/PrivateLayout";
 import PublicLayout from "./layout/PublicLayout";
+import "./styles/index.scss"
 // eslint-disable-next-line no-restricted-imports
+
 
 const App = () => {
   // const user = useReducerData("auth", "user", "");

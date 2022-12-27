@@ -1,0 +1,51 @@
+.common-expenditure {
+  &-main {
+    min-width: 300px;
+    max-width: 400px !important;
+  }
+  &-title {
+    font-size: 17px !important;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  &-head {
+    margin-bottom: 15px;
+  }
+  &-body {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  &-statementNegative {
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ff6b72;
+    display: flex;
+  }
+  &-statementPositive {
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #04d182;
+  }
+  &-footer {
+    margin-top: 15px;
+  }
+  &-content {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 5px;
+  }
+}
+
+.dashboard {
+  &-header {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-cardWrapper {
+    padding: 10px;
+  }
+}
